@@ -44,3 +44,9 @@ a{
     justify-content: space-around;
     color: #fff;
 }
+.logo{
+    background: url(images/logo.png) center/cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
