@@ -56,18 +56,16 @@ a{
     
 }
 .fixed {
-            height: 40px;
-            width: 40px;
-            border-radius: 50%;
-            position: absolute;
-            bottom: 20px;;
-            right: 20px;
-            background: url( images/whatsapp6.png) center/cover;
-            scale: 1;
-            transition: .4s;
+        height: 70px;
+        width: 70px;
+        position: absolute;
+        bottom: 20px;;
+        right: 20px;
+        background: url( images/whatsapp.png) center/cover;
+        scale: 1;
+        transition: .4s;
         background-color: transparent;
         }
         .fixed:hover {
             scale: 1.25;
-            text-shadow: 5px 5px 5px;
         }

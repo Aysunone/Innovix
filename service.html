@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,13 +19,37 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <title>InnoviX</title>
+    <style>
+        .fixed {
+            height: 70px;
+            width: 70px;
+            position: absolute;
+            bottom: 20px;
+            ;
+            right: 20px;
+            background: url(images/whatsapp.png) center/cover;
+            scale: 1;
+            transition: .4s;
+            background-color: transparent;
+        }
+
+        .fixed:hover {
+            scale: 1.25;
+        }
+    </style>
 </head>
+
 <body>
     <span class="material-symbols-outlined">
     </span>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="service.html">Service</a>
-            <a href="contact.html">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="service.html">Service</a>
+    <a href="contact.html">Contact</a>
+    <a href="#logo">
+        <div class="fixed"></div>
+    </a>
+
 </body>
+
 </html>
