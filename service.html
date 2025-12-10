@@ -36,6 +36,83 @@
         .fixed:hover {
             scale: 1.25;
         }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .services-section {
+            padding: 100px 0;
+            background-color: #ffffff;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+
+        .section-header {
+            margin-bottom: 50px;
+        }
+
+        .section-header h4 {
+            color: #ff6b6b;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            margin-left: 830px;
+        }
+
+        .section-header h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-left: 590px;
+        }
+
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background-color: #f4f4f4;
+            padding: 40px 25px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-bottom: 4px solid transparent;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            border-bottom: 4px solid #ff6b6b; 
+            }
+        .service-card i {
+            font-size: 3rem;
+            color: #ff6b6b;
+            margin-bottom: 20px;
+            transition: color 0.3s;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            color: #666;
+            line-height: 1.6;
+        }
     </style>
 </head>
 
@@ -49,7 +126,42 @@
     <a href="#logo">
         <div class="fixed"></div>
     </a>
+    <section class="services-section" id="services">
 
+            <div class="section-header">
+                <h4>Xidmətlərimiz</h4>
+                <h1>Sağlamlıq Hədəflərinizə Bizimlə Çatın</h1>
+            </div>
+
+            <div class="services-grid">
+                
+                <div class="service-card">
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>Fərdi Məşq Proqramları</h3>
+                    <p>
+                        Sizin unikal bədən tipinizə və hədəflərinizə uyğun hazırlanmış xüsusi proqramlarla daha sürətli nəticələr əldə edin.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-apple-alt"></i>
+                    <h3>Peşəkar Qidalanma Planları</h3>
+                    <p>
+                        Mütəxəssis dietoloqlarımız tərəfindən tənzimlənən fərdi qidalanma planları ilə məşqlərinizin effektini ikiqat artırın.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Enerjili Qrup Dərsləri</h3>
+                    <p>
+                        Yoga, Pilates, HIIT və ZUMBA kimi müxtəlif qrup dərslərimizdə iştirak edərək motivasiyanızı yüksəldin.
+                    </p>
+                </div>
+                
+                </div>
+        </div>
+    </section>
 </body>
 
 </html>

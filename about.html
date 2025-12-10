@@ -20,6 +20,7 @@
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <title>InnoviX</title>
     <style>
+
         .fixed {
             height: 70px;
             width: 70px;
@@ -36,6 +37,92 @@
         .fixed:hover {
             scale: 1.25;
         }
+
+        .features {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        .features li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            color: white;
+            font-weight: 600;
+        }
+
+        .features i {
+            color: #ff6b6b;
+            margin-right: 10px;
+        }
+
+        .about-section {
+            padding: 80px 0;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: 0.3s ease;
+            height: 350px;
+            width: 100%;
+        }
+
+        .about-image img:hover {
+            transform: scale(1.02);
+        }
+
+        .about-content h4 {
+            color: #ff6b6b;
+            text-transform: uppercase;
+            font-weight: 900;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .about-content h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .about-content p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+        }
+
+        @media(max-width: 568px) {}
+
+        .container {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+
+        .features li {
+            justify-content: center;
+        }
     </style>
 </head>
 
@@ -49,7 +136,40 @@
     <a href="#logo">
         <div class="fixed"></div>
     </a>
+    <section class="about-section" id="about">
+        <div class="about-image">
+            <img src="images/man.jpg" alt="">
+        </div>
+        <div class="about-content">
+            <h4 style="color: blueviolet; margin-left: 330px">Haqqımızda</h4>
+            <h1 style="color: black; margin-left: 15px">Sağlam Həyat Tərzinə Bizimlə Başlayın</h1>
 
+            <p style="color: black; margin-left: 15px;">
+                Fitness dünyasında illərin təcrübəsinə əsaslanaraq, biz sadəcə məşq xidməti deyil, həm də yeni bir
+                həyat tərzi təqdim edirik.
+            </p>
+            <p style="color: black; margin-left: 15px;">Məqsədimiz standart qəliblərdən kənara çıxaraq, hər bir üzvümüzə fərdi yanaşmaq və
+                onların fiziki
+                potensialını maksimum səviyyəyə çatdırmaqdır.</p>
+
+
+            <p style="color: black; margin-left: 15px">
+                Müasir avadanlıqlarla təchiz olunmuş zalımızda, gigiyena və rahatlıq ən yüksək standartlarda
+                qorunur.
+            </p>
+            <p style="color: black; margin-left: 15px">Peşəkar komandamız sizin motivasiyanızı daim yüksək tutmaq və hədəflərinizə sağlam
+                şəkildə
+                çatmağınız üçün yanınızdadır.</p>
+
+
+            <ul class="features">
+                <li><i style="color: #333;" class="fas fa-check-circle"></i > Sertifikatlı Peşəkar Məşqçilər</li>
+                <li><i style="color: #333;" class="fas fa-check-circle"></i> Geniş və Havalı Məşq Zonaları</li>
+                <li><i style="color: #333;" class="fas fa-check-circle"></i> Fərdi İnkişaf və Qidalanma Planı</li>
+            </ul>
+        </div>
+        </div>
+    </section>
 </body>
 
 </html>
