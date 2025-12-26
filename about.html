@@ -2,22 +2,31 @@
 <html lang="az">
 
 <head>
-    <meta name="author" content="InnoviX">
-    <meta name="keywords" content="Gym,Sport,Health,Fit,Idman,Saglamliq">
-    <meta name="description" content="Gym,Sport,Health,Fit,Idman,Saglamliq">
+    <meta charset="UTF-8">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="InnoviX">
+    <meta name="keywords" content="Gym,Sport,Health,Fit,Idman,Saglamliq,Fitness Baku">
+    <meta name="description" content="InnoviX Fitness Mərkəzi - Sağlam həyat tərzi üçün peşəkar məkan.">
     <title>InnoviX - Niyə Biz?</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <title>InnoviX - Niyə Biz?</title>
+    
 
     <style>
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             scroll-behavior: smooth;
-            font-family: 'Roboto', sans-serif;
         }
 
         body {
@@ -44,6 +53,7 @@
             color: #333;
             font-weight: bold;
             font-size: 1.1rem;
+            transition: 0.3s;
         }
 
         nav a:hover {
@@ -52,17 +62,18 @@
 
 
         .intro-section {
-            padding: 60px 20px;
+            padding: 80px 20px;
             text-align: center;
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
         }
 
         .intro-section h4 {
-            color: #ff4d4d;
+            color: #ff6b6b;
             text-transform: uppercase;
+            font-weight: 900;
             letter-spacing: 2px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
         .intro-section h1 {
@@ -71,11 +82,13 @@
             margin-bottom: 20px;
         }
 
+
         .features-list {
             list-style: none;
             padding: 0;
             display: inline-block;
             text-align: left;
+            margin-top: 20px;
         }
 
         .features-list li {
@@ -102,7 +115,7 @@
             transform: translateX(10px);
         }
 
-        .container {
+        .main-container {
             max-width: 1200px;
             margin: 50px auto;
             padding: 0 20px;
@@ -126,8 +139,15 @@
 
         .block-image img {
             width: 100%;
+            height: 350px;
+            object-fit: cover;
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .block-image img:hover {
+            transform: scale(1.02);
         }
 
         .block-content {
@@ -135,9 +155,9 @@
         }
 
         .block-content span {
-            font-size: 2rem;
+            font-size: 2.5rem;
             font-weight: 900;
-            color: #333;
+            color: #eee;
             display: block;
             margin-bottom: 10px;
         }
@@ -145,6 +165,7 @@
         .block-content h2 {
             font-size: 1.8rem;
             margin-bottom: 20px;
+            color: #222;
         }
 
         .block-content p {
@@ -157,27 +178,32 @@
             position: fixed;
             bottom: 30px;
             right: 30px;
-            width: 65px;
-            height: 65px;
+            width: 60px;
+            height: 60px;
             background: #25d366;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
-            font-size: 35px;
+            font-size: 30px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
             text-decoration: none;
             z-index: 9999;
             transition: 0.3s;
         }
 
-        @media (max-width: 768px) {
+        .whatsapp-btn:hover {
+            transform: scale(1.15);
+        }
 
-            .feature-block,
-            .feature-block.reverse {
+        @media (max-width: 768px) {
+            .feature-block, .feature-block.reverse {
                 flex-direction: column;
                 text-align: center;
+            }
+            .intro-section h1 {
+                font-size: 1.8rem;
             }
         }
     </style>
@@ -195,8 +221,7 @@
     <section class="intro-section" id="about">
         <h4>Haqqımızda</h4>
         <h1>Sağlam Həyat Tərzinə Bizimlə Başlayın</h1>
-        <p>Fitness dünyasında illərin təcrübəsinə əsaslanaraq, biz sadəcə məşq xidməti deyil, həm də yeni bir həyat
-            tərzi təqdim edirik.</p>
+        <p>Fitness dünyasında illərin təcrübəsinə əsaslanaraq, biz sadəcə məşq xidməti deyil, həm də yeni bir həyat tərzi təqdim edirik.</p>
 
         <ul class="features-list">
             <li><a href="#sec1"><i class="fas fa-check-circle"></i> Sertifikatlı Peşəkar Məşqçilər</a></li>
@@ -205,7 +230,7 @@
         </ul>
     </section>
 
-    <div class="container">
+    <div class="main-container">
         <div class="feature-block" id="sec1">
             <div class="block-image">
                 <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1000" alt="Məşqçilər">
@@ -213,8 +238,7 @@
             <div class="block-content">
                 <span>01.</span>
                 <h2>Sertifikatlı Peşəkar Məşqçilər</h2>
-                <p>Talimçilərimiz beynəlxalq sertifikatlara malikdir və ən son məşq metodikalarını tətbiq edir. Hər bir
-                    üzvə fərdi hədəflərinə çatmaq üçün peşəkar dəstək göstərirlər.</p>
+                <p>Təlimçilərimiz beynəlxalq sertifikatlara malikdir və ən son məşq metodikalarını tətbiq edir. Hər bir üzvə fərdi hədəflərinə çatmaq üçün peşəkar dəstək göstərirlər.</p>
             </div>
         </div>
 
@@ -225,8 +249,7 @@
             <div class="block-content">
                 <span>02.</span>
                 <h2>Geniş və Havalı Məşq Zonaları</h2>
-                <p>Məşq etmək üçün ideal şərait yaratmışıq. Geniş, havalandırmalı zallarımızda rahatlıqla təmiz havada
-                    idmandan zövq ala bilərsiniz.</p>
+                <p>Məşq etmək üçün ideal şərait yaratmışıq. Geniş, havalandırmalı zallarımızda rahatlıqla təmiz havada idmandan zövq ala bilərsiniz.</p>
             </div>
         </div>
 
@@ -237,17 +260,14 @@
             <div class="block-content">
                 <span>03.</span>
                 <h2>Fərdi İnkişaf və Qidalanma Planı</h2>
-                <p>Uğur qazanmaq üçün sizə xüsusi hazırlanmış məşq və qidalanma planları təqdim edirik. Proqressinizi
-                    izləyir, motivasiyanızı daim yüksək tuturuq.</p>
+                <p>Uğur qazanmaq üçün sizə xüsusi hazırlanmış məşq və qidalanma planları təqdim edirik. Proqressinizi izləyir, motivasiyanızı daim yüksək tuturuq.</p>
             </div>
         </div>
     </div>
 
-    <a href="#" class="whatsapp-btn">
+    <a href="https://wa.me/994000000000" class="whatsapp-btn" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-
 </body>
-
 </html>

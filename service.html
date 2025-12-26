@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="az">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InnoviX</title>
+    <meta name="author" content="InnoviX">
+    <meta name="keywords" content="Gym,Sport,Health,Fit,Idman,Saglamliq,Fitness Baku">
+    <meta name="description" content="InnoviX Fitness Mərkəzi - Sağlam həyat tərzi üçün peşəkar məkan.">
+    <title>InnoviX - Niyə Biz?</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    
 
     <style>
         * {
@@ -21,7 +30,6 @@
         body {
             background-color: #f9f9f9;
         }
-
 
         nav {
             background: #fff;
@@ -39,6 +47,7 @@
             color: #333;
             font-weight: bold;
             font-size: 1.1rem;
+            transition: 0.3s;
         }
 
         nav a:hover {
@@ -92,7 +101,6 @@
             transition: 0.3s;
             border-bottom: 4px solid transparent;
             height: 100%;
-            cursor: pointer;
         }
 
         .service-card:hover {
@@ -108,7 +116,7 @@
         }
 
         .details-container {
-            padding: 50px 0;
+            padding: 50px 0 100px;
         }
 
         .detail-block {
@@ -120,7 +128,6 @@
             display: flex;
             align-items: center;
             gap: 30px;
-
             scroll-margin-top: 100px;
         }
 
@@ -158,11 +165,36 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
 
+
+        .whatsapp-fixed {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            width: 60px;
+            height: 60px;
+            background-color: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 32px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            text-decoration: none;
+            z-index: 2000;
+            transition: 0.3s;
+        }
+
+        .whatsapp-fixed:hover {
+            transform: scale(1.1);
+        }
+
         @media (max-width: 768px) {
 
             .detail-block,
             .detail-block:nth-child(even) {
                 flex-direction: column;
+                text-align: center;
             }
         }
     </style>
@@ -185,7 +217,6 @@
             </div>
 
             <div class="services-grid">
-
                 <a href="#program" class="card-link">
                     <div class="service-card">
                         <i class="fas fa-dumbbell"></i>
@@ -209,7 +240,6 @@
                         <p>Yoga, Pilates və Zumba ilə motivasiyanı yüksəlt.</p>
                     </div>
                 </a>
-
             </div>
         </div>
     </section>
@@ -266,10 +296,8 @@
 
     </section>
 
-    <a href="#">
-        <div class="fixed"
-            style="position: fixed; bottom: 20px; right: 20px; width: 60px; height: 60px; background: url('images/whatsapp.png') center/cover; border-radius: 50%;">
-        </div>
+    <a href="https://wa.me/yournumber" class="whatsapp-fixed" target="_blank">
+        <i class="fab fa-whatsapp"></i>
     </a>
 
 </body>
