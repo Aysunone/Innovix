@@ -1,183 +1,273 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="az">
 
 <head>
     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="InnoviX">
-    <meta name="keywords" content="Gym,Sport,Health,Fit,Idman,Saglamliq">
-    <meta name="description" content="Gym,Sport,Health,Fit,Idman,Saglamliq">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=fitness_center" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&icon_names=fitness_center" />
+    <meta name="keywords" content="Gym,Sport,Health,Fit,Idman,Saglamliq,Fitness Baku">
+    <meta name="description" content="InnoviX Fitness Mərkəzi - Sağlam həyat tərzi üçün peşəkar məkan.">
+    <title>InnoviX - Niyə Biz?</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <title>InnoviX</title>
+<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <title>InnoviX - Niyə Biz?</title>
+    
+
     <style>
-        .fixed {
-            height: 70px;
-            width: 70px;
-            position: absolute;
-            bottom: 20px;
-            ;
-            right: 20px;
-            background: url(images/whatsapp.png) center/cover;
-            scale: 1;
-            transition: .4s;
-            background-color: transparent;
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
         }
 
-        .fixed:hover {
-            scale: 1.25;
-        }
-
-        .features {
-            list-style: none;
-            margin-top: 10px;
-        }
-
-        .features li {
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            color: white;
-            font-weight: 600;
-        }
-
-        .features i {
-            color: #ff6b6b;
-            margin-right: 10px;
-        }
-
-        .about-section {
-            padding: 80px 0;
-            background-color: #f9f9f9;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            align-items: center;
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.6;
         }
 
 
-        .about-image {
-            position: relative;
+        nav {
+            background: #fff;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
-        .about-image img {
-            width: 100%;
-            border-radius: 10px;
-            box-shadow: 0px 5px 10px black;
-            transition: 0.3s ease;
-            height: 280px;
-            width: 100%;
-            margin-left: 10px
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: 0.3s;
         }
 
-        .about-image img:hover {
-            transform: scale(1.02);
+        nav a:hover {
+            color: #ff4d4d;
         }
 
-        .about-content h4 {
+
+        .intro-section {
+            padding: 80px 20px;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .intro-section h4 {
             color: #ff6b6b;
             text-transform: uppercase;
             font-weight: 900;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
             margin-bottom: 15px;
-            margin-left: 400px;
         }
 
-        .about-content h1 {
-            font-size: 2rem;
-            color: #333;
+        .intro-section h1 {
+            font-size: 2.5rem;
+            font-weight: 900;
             margin-bottom: 20px;
-            line-height: 1;
-            margin-left: 200px;
         }
 
-        .about-content p {
+
+        .features-list {
+            list-style: none;
+            padding: 0;
+            display: inline-block;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .features-list li {
+            margin: 15px 0;
+        }
+
+        .features-list a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 700;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            transition: 0.3s;
+        }
+
+        .features-list a i {
+            color: #ff4d4d;
+            margin-right: 15px;
+        }
+
+        .features-list a:hover {
+            color: #ff4d4d;
+            transform: translateX(10px);
+        }
+
+        .main-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .feature-block {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 100px;
+            gap: 50px;
+        }
+
+        .feature-block.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .block-image {
+            flex: 1;
+        }
+
+        .block-image img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .block-image img:hover {
+            transform: scale(1.02);
+        }
+
+        .block-content {
+            flex: 1;
+        }
+
+        .block-content span {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #ff6b6b;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .block-content h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        .block-content p {
             color: #666;
-            line-height: 1.0;
-            margin-bottom: 15px;
-            font-size: 1rem;
-            margin-left: 100px;
+            font-size: 1.1rem;
         }
 
-        @media(max-width: 568px) {}
 
-        .container {
-            grid-template-columns: 1fr;
-            text-align: center;
-        }
-        .features li {
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
             justify-content: center;
+            color: white;
+            font-size: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            text-decoration: none;
+            z-index: 9999;
+            transition: 0.3s;
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.15);
+        }
+
+        @media (max-width: 768px) {
+            .feature-block, .feature-block.reverse {
+                flex-direction: column;
+                text-align: center;
+            }
+            .intro-section h1 {
+                font-size: 1.8rem;
+            }
         }
     </style>
 </head>
 
 <body>
-    <span class="material-symbols-outlined">
-    </span>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="service.html">Service</a>
-    <a href="contact.html">Contact</a>
-    <a href="#logo">
-        <div class="fixed"></div>
-    </a>
-    <section class="about-section" id="about">
-        <div class="about-image">
-            <img src="images/man.jpg" alt="">
-        </div>
-        <div class="about-content">
-            <h4 style="color: blueviolet;">Haqqımızda</h4>
-            <h1 style="color: black;">Sağlam Həyat Tərzinə Bizimlə Başlayın</h1>
 
-            <p style="color: black; margin-left: 15px;">
-                Fitness dünyasında illərin təcrübəsinə əsaslanaraq, biz sadəcə məşq xidməti deyil, həm də yeni bir
-                həyat tərzi təqdim edirik.
-            </p>
-            <p style="color: black; margin-left: 15px;">Məqsədimiz standart qəliblərdən kənara çıxaraq, hər bir üzvümüzə
-                fərdi yanaşmaq və
-                onların fiziki
-                potensialını maksimum səviyyəyə çatdırmaqdır.</p>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="service.html">Service</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
+    <section class="intro-section" id="about">
+        <h4>Haqqımızda</h4>
+        <h1>Sağlam Həyat Tərzinə Bizimlə Başlayın</h1>
+        <p>Fitness dünyasında illərin təcrübəsinə əsaslanaraq, biz sadəcə məşq xidməti deyil, həm də yeni bir həyat tərzi təqdim edirik.</p>
 
-            <p style="color: black; margin-left: 15px">
-                Müasir avadanlıqlarla təchiz olunmuş zalımızda, gigiyena və rahatlıq ən yüksək standartlarda
-                qorunur.
-            </p>
-            <p style="color: black; margin-left: 15px">Peşəkar komandamız sizin motivasiyanızı daim yüksək tutmaq və
-                hədəflərinizə sağlam
-                şəkildə
-                çatmağınız üçün yanınızdadır.</p>
-
-
-            <ul class="features">
-                <li><i class="fas fa-check-circle"></i><strong style="color: #333;">Sertifikatlı Peşəkar
-                        Məşqçilər</strong> </li>
-                <li><i class="fas fa-check-circle"></i><strong style="color: #333;">Geniş və Havalı Məşq
-                        Zonaları</strong></li>
-                <li><i class="fas fa-check-circle"></i><strong style="color: #333;">Fərdi İnkişaf və Qidalanma
-                        Planı</strong> </li>
-            </ul>
-        </div>
-        </div>
+        <ul class="features-list">
+            <li><a href="#sec1"><i class="fas fa-check-circle"></i> Sertifikatlı Peşəkar Məşqçilər</a></li>
+            <li><a href="#sec2"><i class="fas fa-check-circle"></i> Geniş və Havalı Məşq Zonaları</a></li>
+            <li><a href="#sec3"><i class="fas fa-check-circle"></i> Fərdi İnkişaf və Qidalanma Planı</a></li>
+        </ul>
     </section>
-</body>
 
+    <div class="main-container">
+        <div class="feature-block" id="sec1">
+            <div class="block-image">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1000" alt="Məşqçilər">
+            </div>
+            <div class="block-content">
+                <span>01.</span>
+                <h2>Sertifikatlı Peşəkar Məşqçilər</h2>
+                <p>Təlimçilərimiz beynəlxalq sertifikatlara malikdir və ən son məşq metodikalarını tətbiq edir. Hər bir üzvə fərdi hədəflərinə çatmaq üçün peşəkar dəstək göstərirlər.</p>
+            </div>
+        </div>
+
+        <div class="feature-block reverse" id="sec2">
+            <div class="block-image">
+                <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=1000" alt="Zonalar">
+            </div>
+            <div class="block-content">
+                <span>02.</span>
+                <h2>Geniş və Havalı Məşq Zonaları</h2>
+                <p>Məşq etmək üçün ideal şərait yaratmışıq. Geniş, havalandırmalı zallarımızda rahatlıqla təmiz havada idmandan zövq ala bilərsiniz.</p>
+            </div>
+        </div>
+
+        <div class="feature-block" id="sec3">
+            <div class="block-image">
+                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1000" alt="Qidalanma">
+            </div>
+            <div class="block-content">
+                <span>03.</span>
+                <h2>Fərdi İnkişaf və Qidalanma Planı</h2>
+                <p>Uğur qazanmaq üçün sizə xüsusi hazırlanmış məşq və qidalanma planları təqdim edirik. Proqressinizi izləyir, motivasiyanızı daim yüksək tuturuq.</p>
+            </div>
+        </div>
+    </div>
+
+    <a href="https://wa.me/994000000000" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
 </html>
