@@ -21,6 +21,70 @@
     
 
     <style>
+        /* Naviqasiya menyusunun əsas qutusu */
+    nav {
+        /* Şəffaf ağ fon */
+        background: rgba(255, 255, 255, 0.1); 
+        /* Arxa fonu bulandıran effekt (şüşə effekti) */
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        
+        /* Şəkildəki kimi tam yuvarlaq kənarlar */
+        padding: 12px 30px;
+        border-radius: 50px;
+        
+        /* Menyunu mərkəzə gətirmək üçün */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        
+        /* Ekranın yuxarısında sabit qalması və mərkəzlənməsi */
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        width: auto;
+        min-width: 500px;
+    }
+
+    /* Linklərin ümumi stili */
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 500;
+        font-size: 1rem;
+        position: relative; /* Alt xətt üçün lazımdır */
+        padding-bottom: 5px;
+        transition: 0.3s;
+    }
+
+    /* Aktiv (və ya hover) olan linkin altındakı qırmızı xətt */
+    nav a.active::after, nav a:hover::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #ff4d4d; 
+    }
+
+    /* Sağ tərəfdəki axtarış ikonu */
+    .search-btn {
+        color: #fff;
+        margin-left: 10px;
+        cursor: pointer;
+        font-size: 1.1rem;
+        opacity: 0.8;
+    }
+
+    /* Body-yə bir az yuxarıdan boşluq veririk ki menyu kontentin üstünü örtməsin */
+    body {
+        padding-top: 100px;
+    }
 
         * {
             margin: 0;
@@ -49,16 +113,39 @@
 
         nav a {
             margin: 0 15px;
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            font-size: 1.1rem;
-            transition: 0.3s;
+
         }
 
         nav a:hover {
             color: #ff4d4d;
         }
+        nav a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s ease;
+    opacity: 0.8;
+}
+
+nav a:hover {
+    color: #ff4d4d !important; /* Üstünə gələndə yazı narıncı olur */
+    opacity: 1;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0; /* Başlanğıcda xətt yoxdur */
+    height: 2px;
+    background-color: #ff8c00;
+    transition: 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%; /* Üstünə gələndə xətt uzanır və narıncı olur */
+}
+
 
 
         .intro-section {
@@ -97,7 +184,7 @@
 
         .features-list a {
             text-decoration: none;
-            color: #333;
+            color: #fff;
             font-weight: 700;
             font-size: 1.1rem;
             display: flex;
@@ -165,11 +252,11 @@
         .block-content h2 {
             font-size: 1.8rem;
             margin-bottom: 20px;
-            color: #222;
+            color: #fff;
         }
 
         .block-content p {
-            color: #666;
+            color: #fff;
             font-size: 1.1rem;
         }
 
@@ -206,6 +293,68 @@
                 font-size: 1.8rem;
             }
         }
+        /* Naviqasiya menyusunun əsas qutusu */
+    nav {
+        /* Şəffaf ağ fon */
+        background: rgba(255, 255, 255, 0.1); 
+        /* Arxa fonu bulandıran effekt (şüşə effekti) */
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        
+        /* Şəkildəki kimi tam yuvarlaq kənarlar */
+        padding: 12px 30px;
+        border-radius: 50px;
+        
+        /* Menyunu mərkəzə gətirmək üçün */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        
+        /* Ekranın yuxarısında sabit qalması və mərkəzlənməsi */
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        width: auto;
+        min-width: 500px;
+    }
+
+    /* Linklərin ümumi stili */
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 500;
+        font-size: 1rem;
+        position: relative; /* Alt xətt üçün lazımdır */
+        padding-bottom: 5px;
+        transition: 0.3s;
+    }
+
+
+    nav a.active::after, nav a:hover::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #ff4d4d; 
+    }
+
+
+    .search-btn {
+        color: #fff;
+        margin-left: 10px;
+        cursor: pointer;
+        font-size: 1.1rem;
+        opacity: 0.8;
+    }
+    body {
+        padding-top: 100px;
+    }
     </style>
 </head>
 

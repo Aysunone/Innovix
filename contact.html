@@ -32,6 +32,88 @@
             background-color: #f4f4f4;
             color: #333;
         }
+            nav {
+        
+        background: rgba(255, 255, 255, 0.1); 
+        
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        
+       
+        padding: 12px 30px;
+        border-radius: 50px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        
+       
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        width: auto;
+        min-width: 500px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 500;
+        font-size: 1rem;
+        position: relative; 
+        padding-bottom: 5px;
+        transition: 0.3s;
+    }
+
+    nav a.active::after, nav a:hover::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #ff4d4d; 
+    }
+            nav a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s ease;
+    opacity: 0.8;
+}
+
+nav a:hover {
+    color: #ff4d4d !important; /* Üstünə gələndə yazı narıncı olur */
+    opacity: 1;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0; /* Başlanğıcda xətt yoxdur */
+    height: 2px;
+    background-color: #ff8c00;
+    transition: 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%; /* Üstünə gələndə xətt uzanır və narıncı olur */
+}
+
+
+
+    .search-btn {
+        color: #fff;
+        margin-left: 10px;
+        cursor: pointer;
+        font-size: 1.1rem;
+        opacity: 0.8;
+    }
 
            /* Header hissesidi */
         nav {
@@ -55,6 +137,62 @@
             font-size: 1.1em;
             transition: 0.3s;
         }
+        /* Mövcud nav kodlarını silib bununla əvəz et */
+nav {
+    background: rgba(255, 255, 255, 0.1); /* Şəffaf fon */
+    backdrop-filter: blur(15px); /* Arxa fonun bulanıqlaşması */
+    -webkit-backdrop-filter: blur(15px);
+    
+    padding: 12px 35px;
+    border-radius: 50px; /* Kapsul forması */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    min-width: 500px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    position: relative;
+    padding-bottom: 5px;
+    transition: 0.3s;
+    opacity: 0.8;
+}
+
+/* Xidmətlər səhifəsində olduğun üçün aktiv linkin altındakı qırmızı xətt */
+nav a.active::after, 
+nav a:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ff4d4d;
+}
+
+nav a.active {
+    opacity: 1;
+}
+
+/* Sağ tərəfdəki axtarış ikonu */
+.search-icon {
+    color: #fff;
+    margin-left: 10px;
+    cursor: pointer;
+}
 
         nav a:hover {
             color: #ff6b6b;
