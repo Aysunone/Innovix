@@ -32,7 +32,8 @@
             background-color: #f4f4f4;
             color: #333;
         }
-       /* header hissesidi */
+
+        /* header hissesidi */
         nav {
             background-color: #fff;
             padding: 20px;
@@ -56,11 +57,10 @@
         nav a:hover {
             color: #ff6b6b;
         }
-
-
+ 
         main {
             position: absolute;
-            top: 70px;
+            top: 79px;
             bottom: 53px;
             left: 0;
             right: 0;
@@ -79,7 +79,7 @@
             border-radius: 20px;
             opacity: .6;
         }
-
+         /* cercive hissesi */
         .contact-section {
             text-align: center;
         }
@@ -87,6 +87,7 @@
         .contact-section h1 {
             color: white;
             margin-bottom: 15px;
+
         }
 
         .contact-section p {
@@ -99,14 +100,14 @@
             justify-content: space-around;
             flex-wrap: wrap;
             margin-top: 30px;
+            transition: .4s;
         }
 
-        .contact-info :hover {
-            transform: scale(1.05);
-
+        .contact-info:hover {
+            transform: scale(1.01);
         }
 
-
+        /* cercive icindeki yazilar */
         .info-item {
             background-color: black;
             color: white;
@@ -118,6 +119,12 @@
             min-width: 250px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
             border: 1px solid white;
+            transition: .4s;
+        }
+
+        .info-item:hover {
+            box-shadow: 0 0 20px rgba(250, 250, 250, 1);
+            scale: 1.03;
         }
 
         .info-item h3 {
@@ -139,10 +146,10 @@
             width: 100%;
             color: black;
             color: white;
-            box-shadow: 0 -2 10px rgba(0, 0, 0, 0.1);
+            /* box-shadow: 0 -2 10px rgba(0, 0, 0, 0.1); */
             margin-top: 600px;
         }
-
+        /* ikonkalar */
         .social-icons {
             margin-top: 30px;
             display: flex;
@@ -170,7 +177,7 @@
             transform: scale(1.1);
         }
     </style>
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
@@ -192,6 +199,7 @@
                 <div class="info-item">
                     <h3>Ünvan</h3>
                     <p>Bakı, Azərbaycan, AZ1000</p>
+                    <!-- <iframe src="" frameborder="0"></iframe> -->
                 </div>
                 <div class="info-item">
                     <h3>Telefon</h3>
@@ -202,10 +210,10 @@
                     <p>info@innovixgmail.com</p>
                 </div>
                 <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/?locale=ru_RU"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
                 </div>
 
         </section>
