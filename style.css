@@ -42,7 +42,6 @@ a {
     margin-top: 20px;
     margin-left: 30px;
 }
-
 .giris {
     backdrop-filter: blur(10px);
     width: 500px;
@@ -120,16 +119,19 @@ a {
     font-size: 16px;
     color: #333;
     font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .giris .register-link {
     font-size: 14.5px;
     text-align: center;
-    margin: 20px 0 15px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 .register-link p a {
     color: white;
+    margin-left: 20px;
     text-decoration: none;
     font-weight: 600;
 }
@@ -148,6 +150,11 @@ a {
 
 .singup {
     margin-right: 190px;
+}
+.qonaq{
+    margin-top: 20px;
+    text-align: center;
+    margin-right: 80px;
 }
 
 .container {
