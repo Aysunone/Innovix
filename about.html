@@ -31,7 +31,7 @@
 
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #000;
+            background-color: #023a83;
             color: #fff;
             line-height: 1.6;
         }
@@ -47,37 +47,9 @@
         }
 
         /* Header hissesidi */
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: whitesmoke;
-            font-weight: bold;
-            font-size: 1.1em;
-            transition: 0.3s;
-        }
 
+        
         /* Mövcud nav kodlarını silib bununla əvəz et */
-        nav {
-            background: rgba(255, 255, 255, 0.1);
-            /* Şəffaf fon */
-            backdrop-filter: blur(15px);
-            /* Arxa fonun bulanıqlaşması */
-            -webkit-backdrop-filter: blur(15px);
-            padding: 12px 35px;
-            border-radius: 50px;
-            /* Kapsul forması */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 25px;
-            position: fixed;
-            top: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 1000;
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            min-width: 500px;
-        }
 
         nav a {
             text-decoration: none;
@@ -98,7 +70,7 @@
             bottom: 0;
             width: 100%;
             height: 2px;
-            background-color: #ff4d4d;
+            background-color: #000;
         }
 
         nav a.active {
@@ -106,7 +78,7 @@
         }
         
                 nav a:hover {
-                    color: #ff6b6b;
+                    color: #fff;
                 }
 
         /* Sağ tərəfdəki axtarış ikonu */
@@ -124,8 +96,8 @@
             margin: 0 auto;
         }
 
-        .intro-section h4 {
-            color: #ff6b6b;
+        .intro-section h3 {
+            color: white;
             text-transform: uppercase;
             font-weight: 900;
             letter-spacing: 2px;
@@ -162,12 +134,11 @@
         }
 
         .features-list a i {
-            color: #ff4d4d;
+            color: #555555;
             margin-right: 15px;
         }
 
         .features-list a:hover {
-            color: #ff4d4d;
             transform: translateX(10px);
         }
 
@@ -213,9 +184,10 @@
         .block-content span {
             font-size: 2.5rem;
             font-weight: 900;
-            color: #ff6b6b;
+            color: white;
             display: block;
             margin-bottom: 10px;
+            opacity: 1;
         }
 
         .block-content h2 {
@@ -306,7 +278,7 @@
         bottom: 0;
         width: 100%;
         height: 2px;
-        background-color: #ff4d4d; 
+        background-color: #000; 
     }
 
 
@@ -333,7 +305,7 @@
     </nav>
 
     <section class="intro-section" id="about">
-        <h4>Haqqımızda</h4>
+        <h3>Haqqımızda</h3>
         <h1>Sağlam Həyat Tərzinə Bizimlə Başlayın</h1>
         <p>Fitness dünyasında illərin təcrübəsinə əsaslanaraq, biz sadəcə məşq xidməti deyil, həm də yeni bir həyat
             tərzi təqdim edirik.</p>
@@ -357,6 +329,9 @@
                     üzvə fərdi hədəflərinə çatmaq üçün peşəkar dəstək göstərirlər.</p>
             </div>
         </div>
+
+
+
 
         <div class="feature-block reverse" id="sec2">
             <div class="block-image">
