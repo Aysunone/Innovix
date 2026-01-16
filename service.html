@@ -139,7 +139,7 @@
             gap: 30px;
             scroll-margin-top: 100px;
 
-            
+
         }
 
         .detail-block:nth-child(even) {
@@ -177,27 +177,20 @@
         }
 
 
-        .whatsapp-fixed {
-            position: fixed;
-            bottom: 25px;
-            right: 25px;
-            width: 60px;
-            height: 60px;
-            background-color: #25d366;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 32px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            text-decoration: none;
-            z-index: 2000;
-            transition: 0.3s;
+        .fixed {
+            height: 70px;
+            width: 70px;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background: url(images/whatsapp.png) center/cover;
+            scale: 1;
+            transition: .4s;
+            background-color: transparent;
         }
 
-        .whatsapp-fixed:hover {
-            transform: scale(1.1);
+        .fixed:hover {
+            scale: 1.1;
         }
 
         @media (max-width: 768px) {
@@ -307,8 +300,8 @@
 
     </section>
 
-    <a href="https://wa.me/yournumber" class="whatsapp-fixed" target="_blank">
-        <i class="fab fa-whatsapp"></i>
+    <a href="#logo">
+        <div class="fixed"></div>
     </a>
 
 </body>
