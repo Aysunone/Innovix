@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <title>InnoviX</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f0;
+        }
+
+        .yas-header {
+            background-color: #2d5a27;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 30px;
+        }
+
+        .yas-card {
+            background: white;
+            display: flex;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .yas-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .yas-img-box {
+            flex: 1;
+        }
+
+        .yas-img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .yas-text {
+            flex: 1.2;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .age-badge {
+            background: #4CAF50;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 5px;
+            font-size: 13px;
+            width: fit-content;
+            margin-bottom: 10px;
+        }
+
+        .yas-text h2 {
+            color: #2d5a27;
+            margin-bottom: 10px;
+        }
+
+        .yas-text p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .focus {
+            font-weight: bold;
+            color: #4CAF50;
+            font-size: 13px;
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+        }
+        .back-link a {
+            color: #a8e6cf;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="yas-header">
+        <div class="back-link"><a href="guess.html">←Geriyə dön</a></div>
+        <h1>Yaşınıza Uyğun İdman Proqramı</h1>
+        <p>Hər dövrün öz gücü var. Öz yaş qrupunu seç və başla!</p>
+    </header>
+
+    <main class="container">
+
+        <div class="yas-card">
+            <div class="yas-img-box">
+                <img src="images/18.png" alt="16 yaş idman">
+            </div>
+            <div class="yas-text">
+                <span class="age-badge">12 - 18 Yaş</span>
+                <h2>Yeniyetməlik Enerjisi</h2>
+                <p>Böyümə dövründə sümük quruluşunu və duruşu düzgün formalaşdıran hərəkətlər.</p>
+                <div class="focus">Fokus: Boy artımı və Elastiklik</div>
+            </div>
+        </div>
+
+        <div class="yas-card">
+            <div class="yas-img-box">
+                <img src="images/25.png" alt="23 yaş idman">
+            </div>
+            <div class="yas-text">
+                <span class="age-badge">18 - 30 Yaş</span>
+                <h2>Maksimum Performans</h2>
+                <p>Metabolizmanın ən sürətli olduğu dövr. Əzələ kütləsi və dözümlülük üçün ideal zaman.</p>
+                <div class="focus">Fokus: Güc və Estetika</div>
+            </div>
+        </div>
+
+        <div class="yas-card">
+            <div class="yas-img-box">
+                <img src="images/40.png" alt="40 yaş idman">
+            </div>
+            <div class="yas-text">
+                <span class="age-badge">30 - 50 Yaş</span>
+                <h2>Dinamik Balans</h2>
+                <p>İş həyatının stresini atmaq və ürək-damar sağlığını qorumaq üçün hərəkətlər.</p>
+                <div class="focus">Fokus: Sağlamlıq və Stress İdarəsi</div>
+            </div>
+        </div>
+
+        <div class="yas-card">
+            <div class="yas-img-box">
+                <img src="images/60.png" alt="60 yaş idman">
+            </div>
+            <div class="yas-text">
+                <span class="age-badge">50+ Yaş</span>
+                <h2>Uzunömürlülük Sırrı</h2>
+                <p>Oynaqları yormayan, müvazinəti artıran və bədəni gümrah saxlayan yüngül məşqlər.</p>
+                <div class="focus">Fokus: Mobillik və Oynaq Sağlamlığı</div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

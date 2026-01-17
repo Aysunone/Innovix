@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <title>InnoviX</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: #fafdfa;
+        }
+
+        .qida-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=1200');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .back-link a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+            background: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: -40px auto 40px;
+            padding: 0 20px;
+        }
+
+        /* Kartlar */
+        .nutrition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .nutrition-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            position: relative;
+            transition: 0.3s;
+        }
+
+        .nutrition-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .nutrition-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .card-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: #4CAF50;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .nutrition-card h3,
+        .nutrition-card p {
+            padding: 15px 20px;
+        }
+
+        .nutrition-card p {
+            color: #666;
+            font-size: 15px;
+            padding-top: 0;
+        }
+
+        /* Menyu Hissəsi */
+        .menu-section {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            margin-bottom: 50px;
+        }
+
+        .menu-section h2 {
+            color: #2d5a27;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .menu-day {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .menu-day img {
+            width: 300px;
+            height: 200px;
+            border-radius: 15px;
+            object-fit: cover;
+        }
+
+        .meal {
+            background: #f1f8f1;
+            margin-bottom: 10px;
+            padding: 12px;
+            border-radius: 8px;
+            border-left: 4px solid #4CAF50;
+        }
+
+        /* Qaydalar */
+        .rules-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .rule-box {
+            background: #2d5a27;
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .rule-box h3 {
+            margin-bottom: 10px;
+            color: #a8e6cf;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="qida-header">
+        <div class="back-link"><a href="guess.html">← ←Geriyə dön</a></div>
+        <h1>Sağlam Qidalanma Bələdçisi</h1>
+        <p>İdman performansınızı düzgün qidalarla zirvəyə daşıyın.</p>
+    </header>
+
+    <main class="container">
+
+        <section class="nutrition-grid">
+            <div class="nutrition-card">
+                <img src="images/zulal.png" alt="Zülallar">
+                <div class="card-badge">Zülallar</div>
+                <h3>Əzələ İnşası</h3>
+                <p>Toyuq, balıq, yumurta və paxlalılar əzələlərin bərpası üçün vacibdir.</p>
+            </div>
+
+            <div class="nutrition-card">
+                <img src="images/sezar.png" alt="Vitaminlər">
+                <div class="card-badge">Vitaminlər</div>
+                <h3>Enerji Balansı</h3>
+                <p>Tərəvəz və meyvələr bədənin müqavimətini artırır və metabolizmanı tənzimləyir.</p>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Gündəlik Nümunə Menyu</h2>
+            <div class="menu-container">
+                <div class="menu-day">
+                    <img src="images/meyve.png" alt="Menyu">
+                    <div class="menu-details">
+                        <div class="meal"><strong>Səhər:</strong> Yulaf sıyığı, 1 ədəd banan, qoz.</div>
+                        <div class="meal"><strong>Nahar:</strong> Izqara toyuq, qəhvəyi düyü, bol salat.</div>
+                        <div class="meal"><strong>Şam:</strong> Balıq və ya tərəvəz sote, qatıq.</div>
+                        <div class="meal"><strong>Ara pay:</strong> 1 ovuc çiy badam və ya yaşıl alma.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rules-section">
+            <div class="rule-box">
+                <h3>💧 Su İçməyi Unutma!</h3>
+                <p>Gündə ən az 2-2.5 litr su içmək metabolizmanı 15% daha sürətli işlədir.</p>
+            </div>
+            <div class="rule-box">
+                <h3>🕒 Zamanlama Önəmlidir</h3>
+                <p>Məşqdən 2 saat əvvəl və məşqdən 45 dəqiqə sonra qidalanmağa çalışın.</p>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
