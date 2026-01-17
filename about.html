@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo2.png" type="image/x-icon">
     <title>InnoviX - Niyə Biz?</title>
 
 
@@ -35,7 +35,18 @@
             line-height: 1.6;
         }
 
+        .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
 
+    .site-logo {
+        width: 150px; /* İstədiyiniz ölçüyə görə dəyişə bilərsiniz */
+        height: auto;
+        object-fit: contain;
+    }
 
         .search-btn {
             color: #fff;
@@ -133,8 +144,12 @@
         }
 
         .features-list a i {
-            color: #555555;
+            color: white;
             margin-right: 15px;
+        }
+        .features-list a i:hover{
+            color: green;
+            transition: .3s;
         }
 
         .features-list a:hover {
