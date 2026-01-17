@@ -27,7 +27,7 @@
             scroll-behavior: smooth;
         }
 
-        body { 
+        body {
             background-color: #558d58;
 
         }
@@ -163,7 +163,7 @@
         }
 
         .section-header h3 {
-            color: gray;
+            color: white;
             font-weight: 900;
             text-transform: uppercase;
         }
@@ -186,25 +186,47 @@
         }
 
         .service-card {
-            background-color: #f4f4f4;
-            padding: 40px 25px;
+            /* background-color: #558d58;
+            /* padding: 40px 25px; */
             border-radius: 10px;
             text-align: center;
             transition: 0.3s;
+            border-radius: 4px solid;
             border-bottom: 4px solid transparent;
             height: 100%;
+            opacity: 1.1;
+            background-color: green;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            flex: 1;
+            min-width: 250px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            border: 1px solid white;
+            transition: .4s;
         }
 
         .service-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-            border-bottom: 4px solid #023a83;
+            border-bottom: 4px solid white;
+            color: green;
+
         }
 
         .service-card i {
             font-size: 3rem;
-            color: gray;
+            color: white;
             margin-bottom: 20px;
+            opacity: 1.1;
+        }
+
+        .service-card i:hover {
+            color: green;
+            margin-bottom: 20px;
+            opacity: 1.1;
         }
 
         .details-container {
@@ -275,7 +297,6 @@
         .fixed:hover {
             scale: 1.1;
         }
-
     </style>
 </head>
 
